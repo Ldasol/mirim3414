@@ -1,0 +1,182 @@
+<html>
+<head>
+<title>portfolio</title>
+
+<style type="text/css">
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+font-family: HelveticaNeue33;
+src: url("HelveticaNeueLTPro-ThEx.otf") format("opentype");
+}
+
+a:link     {color:#aba8a8;text-decoration:none} 
+a:active   {color:#302f2f;text-decoration:none} 
+a:hover    {color:#302f2f;text-decoration:none}
+a:visited  {color:#aba8a8;text-decoration:none}
+
+a.activated {
+	color: #302f2f;
+} 
+#left{
+	width: 182px;
+	height: 100%;
+	float: left;
+}
+
+#right{
+	margin-left:182px;
+	height: 100%;
+	position: absolute;
+}
+
+.logo{
+	margin: 30px auto 0;
+	display: block;
+
+}
+.menu{
+    list-style-type: none;
+    margin: 35px 0px;
+}
+.menu li{
+	margin: 10px 0;
+	width: 100px;
+	text-align: center;
+	font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-size: 11px;
+   color: #adaaaa;
+}
+.sns{
+	position: absolute;
+	bottom: 5%;
+	left: 33px;
+}
+
+.sns img {
+	margin-right: 7px;
+}
+.about{
+    font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;   
+    font-size: 17px;
+    color: #666666;
+    margin: 50px 0 0 20px;
+    position: relative;
+}
+.category{
+	list-style-type: none;
+	margin: 25px 0 5px 10px;
+	padding: 0;
+
+}
+
+.category li{
+	display: inline;
+	margin: 0 10px;
+	height: 100px;
+	font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-size: 9px;
+   color: #adaaaa;
+
+}
+
+.stroke{
+	background: #c6c6c6;
+	width: 95%;
+	height: 0.5px;
+    margin-left: 20px;
+}
+
+.aboutme{
+	position: absolute;
+	margin-left: 170px;
+	margin-top: 120px;
+}
+
+.skill{
+	position: absolute;
+	margin-left: 470px;
+	margin-top: 120px;
+}
+
+.background{
+	position: absolute;
+	margin-left: 770px;
+	margin-top: 120px;
+}
+
+.description {
+	width: 205px;
+	height: 204px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+
+a:hover .description {
+	display: block;
+}
+
+.aboutmetext{
+	position:absolute; 
+	left: 30%;
+	top: 35%
+}
+
+</style>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	var rightWidth = ($(window).width() - 182) + "px";
+	console.log("rightWidth: " + rightWidth);
+	$('#right').css("width", rightWidth);
+});
+</script>
+</head>
+
+<body>
+<div id="left">
+	<a href="index.html"><img src="logo.png" class="logo"></a>
+	<ul class="menu">
+		<li><a href= "about.html" class="activated">About</a></li>
+		<li><a href= "work.html">Work</a></li>
+		<li><a href= "contact.html">Contact</a></li>
+	</ul>
+	<div class="sns">
+	<a href="https://twitter.com/dasol9926"><img src="twitter.png"></a>
+	<a href="https://www.facebook.com/profile.php?id=100003852263135"><img src="facebook.png"></a>
+	<a href="http://instagram.com/gi5269"><img src="instagram.png"></a>
+	</div>
+
+</div>
+
+<div id="right">
+	<div class="about"> About <br></div>
+
+	<ul class="category">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+
+	<div class="stroke"></div>
+
+		<div class="aboutmetext">
+		<img src="aboutmetext.png">
+		</div>
+
+</div>
+
+</body>
+</html>
