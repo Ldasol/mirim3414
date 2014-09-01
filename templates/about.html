@@ -15,7 +15,7 @@ body{
 
 @font-face {
 font-family: HelveticaNeue33;
-src: url("HelveticaNeueLTPro-ThEx.otf") format("opentype");
+src: url("/static/HelveticaNeueLTPro-ThEx.otf") format("opentype");
 }
 
 a:link     {color:#aba8a8;text-decoration:none} 
@@ -105,6 +105,7 @@ a.activated {
 	position: absolute;
 	margin-left: 470px;
 	margin-top: 120px;
+
 }
 
 .background{
@@ -140,53 +141,53 @@ $(document).ready(function() {
 
 <body>
 <div id="left">
-	<a href="index.html"><img src="logo.png" class="logo"></a>
+	<a href="/"><img src="/static/logo.png" class="logo"></a>
 	<ul class="menu">
-		<li><a href= "about.html">About</a></li>
-		<li><a href= "work.html" class="activated">Work</a></li>
-		<li><a href= "contact.html">Contact</a></li>
+		<li><a href= "/about" class="activated">About</a></li>
+		<li><a href= "/work">Work</a></li>
+		<li><a href= "/contact">Contact</a></li>
 	</ul>
 	<div class="sns">
-	<a href="https://twitter.com/dasol9926"><img src="twitter.png"></a>
-	<a href="https://www.facebook.com/profile.php?id=100003852263135"><img src="facebook.png"></a>
-	<a href="http://instagram.com/gi5269"><img src="instagram.png"></a>
+	<a href="https://twitter.com/dasol9926"><img src="/static/twitter.png"></a>
+	<a href="https://www.facebook.com/profile.php?id=100003852263135"><img src="/static/facebook.png"></a>
+	<a href="http://instagram.com/gi5269"><img src="/static/instagram.png"></a>
 	</div>
 
 </div>
 
 <div id="right">
-	<div class="about"> Work <br></div>
+	<div class="about"> About <br></div>
 
 	<ul class="category">
-		<li><a href= "">All</a></li>
-		<li>2D</li>
-		<li>Handicraft</li>
-		<li>3D</li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
 	</ul>
-
+    
 	<div class="stroke"></div>
-
-	<a href="aboutme">
+    <br>
+	<a href="/aboutme.html">
 		<div class="aboutme">
-			<img src="aboutme.png">
+			<img src="/static/aboutme.png">
 			<div class="description">
-				<img src="aboutme2.png">
+				<img src="/static/aboutme2.png">
 			</div>
 		</div>
 	</a>
-	<a href="skill">
+	<a href="/skill.html">
 		<div class="skill">
-			<img src="skill.png">
+			<img src="/static/skill.png">
 			<div class="description">
-				<img src="skill2.png">
+				<img src="/static/skill2.png">
 			</div>
 		</div>
 	</a>
-	<a href="background">
+	<a href="/background.html">
 		<div class="background">
-			<img src="background.png">
+			<img src="/static/background.png">
 			<div class="description">
-				<img src="background2.png">
+				<img src="/static/background2.png">
 			</div>
 		</div>
 	</a>

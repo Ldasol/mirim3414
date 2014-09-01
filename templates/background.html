@@ -15,7 +15,7 @@ body{
 
 @font-face {
 font-family: HelveticaNeue33;
-src: url("HelveticaNeueLTPro-ThEx.otf") format("opentype");
+src: url("/static/HelveticaNeueLTPro-ThEx.otf") format("opentype");
 }
 
 a:link     {color:#aba8a8;text-decoration:none} 
@@ -105,7 +105,6 @@ a.activated {
 	position: absolute;
 	margin-left: 470px;
 	margin-top: 120px;
-
 }
 
 .background{
@@ -127,6 +126,12 @@ a:hover .description {
 	display: block;
 }
 
+.career{
+	position:absolute; 
+	left: 30%;
+	top: 47%
+}
+
 </style>
 
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -141,16 +146,16 @@ $(document).ready(function() {
 
 <body>
 <div id="left">
-	<a href="index.html"><img src="logo.png" class="logo"></a>
+	<a href="/"><img src="/static/logo.png" class="logo"></a>
 	<ul class="menu">
-		<li><a href= "about.html" class="activated">About</a></li>
-		<li><a href= "work.html">Work</a></li>
-		<li><a href= "contact.html">Contact</a></li>
+		<li><a href= "/about" class="activated">About</a></li>
+		<li><a href= "/work">Work</a></li>
+		<li><a href= "/contact">Contact</a></li>
 	</ul>
 	<div class="sns">
-	<a href="https://twitter.com/dasol9926"><img src="twitter.png"></a>
-	<a href="https://www.facebook.com/profile.php?id=100003852263135"><img src="facebook.png"></a>
-	<a href="http://instagram.com/gi5269"><img src="instagram.png"></a>
+	<a href="https://twitter.com/dasol9926"><img src="/static/twitter.png"></a>
+	<a href="https://www.facebook.com/profile.php?id=100003852263135"><img src="/static/facebook.png"></a>
+	<a href="http://instagram.com/gi5269"><img src="/static/instagram.png"></a>
 	</div>
 
 </div>
@@ -164,33 +169,13 @@ $(document).ready(function() {
 		<li></li>
 		<li></li>
 	</ul>
-    
+
 	<div class="stroke"></div>
-    <br>
-	<a href="aboutme.html">
-		<div class="aboutme">
-			<img src="aboutme.png">
-			<div class="description">
-				<img src="aboutme2.png">
-			</div>
+
+		<div class="career">
+		<img src="/static/career.png">
 		</div>
-	</a>
-	<a href="skill.html">
-		<div class="skill">
-			<img src="skill.png">
-			<div class="description">
-				<img src="skill2.png">
-			</div>
-		</div>
-	</a>
-	<a href="background.html">
-		<div class="background">
-			<img src="background.png">
-			<div class="description">
-				<img src="background2.png">
-			</div>
-		</div>
-	</a>
+
 </div>
 
 </body>
